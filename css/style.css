@@ -1,3 +1,30 @@
+.pb-sm {
+  padding-bottom: 1rem; }
+
+.pb-md {
+  padding-bottom: 2rem; }
+
+.pb-lg {
+  padding-bottom: 4rem; }
+
+.pb-xl {
+  padding-bottom: 8rem; }
+
+.mb-sm {
+  margin-bottom: 1rem; }
+
+.mb-md {
+  margin-bottom: 2rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-xl {
+  margin-bottom: 8rem; }
+
+.drop-shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+
 html {
   font-size: 62.5%;
   /* Sets 1rem to 10px while being more browser-friendly */
@@ -9,3 +36,131 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  color: #ffffff; }
+
+.heading-1 {
+  font-size: 6rem; }
+
+.heading-2 {
+  font-size: 4.8rem; }
+
+.heading-3 {
+  font-size: 3.6rem; }
+
+.heading-4 {
+  font-size: 2.4rem; }
+
+.align-center {
+  width: 100%;
+  text-align: center; }
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #464653;
+  color: #ffffff; }
+
+.tab {
+  cursor: pointer;
+  height: 12rem;
+  width: 36rem;
+  position: absolute;
+  border-radius: 10rem; }
+  .tab::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.4rem;
+    font-family: "Cabin", sans-serif;
+    color: #ffffff; }
+  .tab[class$="open"] {
+    background-color: #16161d; }
+    .tab[class$="open"]::after {
+      content: "Return"; }
+  .tab--left-close {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: #1559a5; }
+    .tab--left-close::after {
+      content: "About"; }
+  .tab--left-open {
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%) rotate(90deg); }
+  .tab--right-close {
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%) rotate(-90deg);
+    background-color: #fd7e0d; }
+    .tab--right-close::after {
+      content: "Projects"; }
+  .tab--right-open {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    background-color: #16161d; }
+  .tab--bottom-close {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0ac12a; }
+    .tab--bottom-close::after {
+      content: "Contact"; }
+  .tab--bottom-open {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #16161d; }
+    .tab--bottom-open::after {
+      content: "Return";
+      color: #ffffff; }
+
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
+  .page--main {
+    display: flex;
+    padding: 8rem;
+    position: relative;
+    background-color: #16161d;
+    margin: 0 auto;
+    overflow: hidden; }
+  .page--left {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #1559a5; }
+  .page--right {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fd7e0d; }
+  .page--bottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0ac12a; }
+
+.close {
+  top: 0;
+  left: 0; }
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.icon-bar {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between; }

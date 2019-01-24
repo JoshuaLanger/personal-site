@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Open+Sans" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-    Howdy
-</body>
+  </head>
+  <body>
+    <main class="page page--main">
+      <div class="container">
+          <h1 class="heading-1 align-center mb-lg">Joshua Langer</h1>
+          <h4 class="heading-4 align-center mb-lg">Front-end JavaScript Web Developer from Minneapolis, MN</h4>
+          <div class="icon-bar">
+            <div class="icon drop-shadow">1</div>
+            <div class="icon drop-shadow">2</div>
+            <div class="icon drop-shadow">3</div>
+          </div>
+      </div> 
+      <div id="leftPage" class="page page--left">
+        <div id="close" class="tab tab--left-close"></div>
+        <div id="open" class="tab tab--left-open"></div>
+      </div>
+      <div id="rightPage" class="page page--right">
+        <div id="close" class="tab tab--right-close"></div>
+        <div id="open" class="tab tab--right-open"></div>
+      </div>
+      <div id="bottomPage" class="page page--bottom">
+        <div id="close" class="tab tab--bottom-close"></div>
+        <div id="open" class="tab tab--bottom-open"></div>
+      </div>
+    </main>
+
+    <script src="javascript/layout.js"></script>
+  </body>
 </html>

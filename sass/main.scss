@@ -2,11 +2,13 @@
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
+@import 'abstracts/utilities';
 
 @import 'base/base';
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'components/icon';
 @import 'components/tab';
 
 @import 'layout/footer';
