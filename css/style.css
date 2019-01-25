@@ -38,6 +38,7 @@ html {
   box-sizing: inherit; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
+  line-height: 1.2;
   font-family: "Cabin", sans-serif;
   font-weight: 400;
   color: #ffffff; }
@@ -54,6 +55,12 @@ html {
 .heading-4 {
   font-size: 2.4rem; }
 
+.paragraph {
+  line-height: 1.15;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff; }
+
 .align-center {
   width: 100%;
   text-align: center; }
@@ -63,7 +70,14 @@ html {
   height: 6rem;
   border-radius: 50%;
   background-color: #464653;
-  color: #ffffff; }
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in-out; }
+  .icon:hover {
+    transform: scale(1.1); }
 
 .tab {
   cursor: pointer;
@@ -72,7 +86,7 @@ html {
   position: absolute;
   border-radius: 10rem; }
   .tab::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 25%;
     left: 50%;
@@ -80,17 +94,18 @@ html {
     font-size: 2.4rem;
     font-family: "Cabin", sans-serif;
     color: #ffffff; }
-  .tab[class$="open"] {
+  .tab[class$='open'] {
+    z-index: -1;
     background-color: #16161d; }
-    .tab[class$="open"]::after {
-      content: "Return"; }
+    .tab[class$='open']::after {
+      content: 'Return'; }
   .tab--left-close {
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%) rotate(90deg);
     background-color: #1559a5; }
     .tab--left-close::after {
-      content: "About"; }
+      content: 'About'; }
   .tab--left-open {
     top: 50%;
     right: 100%;
@@ -101,7 +116,7 @@ html {
     transform: translate(50%, -50%) rotate(-90deg);
     background-color: #fd7e0d; }
     .tab--right-close::after {
-      content: "Projects"; }
+      content: 'Projects'; }
   .tab--right-open {
     top: 50%;
     left: 100%;
@@ -112,14 +127,14 @@ html {
     transform: translate(-50%, -50%);
     background-color: #0ac12a; }
     .tab--bottom-close::after {
-      content: "Contact"; }
+      content: 'Contact'; }
   .tab--bottom-open {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #16161d; }
     .tab--bottom-open::after {
-      content: "Return";
+      content: 'Return';
       color: #ffffff; }
 
 .page {
@@ -129,12 +144,13 @@ html {
   transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
   .page--main {
     display: flex;
-    padding: 8rem;
     position: relative;
+    padding: 8rem 16rem;
     background-color: #16161d;
     margin: 0 auto;
     overflow: hidden; }
   .page--left {
+    padding: 8rem 12rem;
     position: absolute;
     top: 0;
     left: -100%;
@@ -154,11 +170,15 @@ html {
   top: 0;
   left: 0; }
 
+.about-container {
+  display: grid; }
+
 .container {
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
 
 .icon-bar {
   width: 30rem;

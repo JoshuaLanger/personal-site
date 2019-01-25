@@ -6,14 +6,15 @@
 
   &--main {
     display: flex;
-    padding: 8rem;
     position: relative;
+    padding: 8rem 16rem;
     background-color: $color-grey-1;
     margin: 0 auto;
     overflow: hidden;
   }
 
   &--left {
+    padding: 8rem 12rem;
     position: absolute;
     top: 0;
     left: -100%;

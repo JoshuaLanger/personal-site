@@ -8,6 +8,7 @@ $font-family-head: 'Cabin', sans-serif;
 $font-family-body: 'Open Sans', sans-serif;
 
 %heading {
+  line-height: 1.2;
   font-family: $font-family-head;
   font-weight: 400;
   color: $color-white;
@@ -33,7 +34,14 @@ $font-family-body: 'Open Sans', sans-serif;
   font-size: $font-size-h4;
 }
 
+.paragraph {
+  line-height: 1.15;
+  font-size: $font-size-body;
+  font-family: $font-family-body;
+  color: $color-white;
+}
+
 .align-center {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }

@@ -1,83 +1,84 @@
 .tab {
-    cursor: pointer;
-    height: 12rem;
-    width: 36rem;
+  cursor: pointer;
+  height: 12rem;
+  width: 36rem;
+  position: absolute;
+  border-radius: 10rem;
+
+  &::after {
+    content: '';
     position: absolute;
-    border-radius: 10rem;
-              
-      &::after {
-        content: "";
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: $font-size-h4;
-        font-family: $font-family-head;
-        color: $color-white;
-      }
-    
-    &[class$="open"] {
-      background-color: $color-grey-1;
-              
-      &::after {
-        content: "Return";
-      }
-    }
-    
-    &--left-close {
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%) rotate(90deg);
-      background-color: $color-blue-3;
-              
-      &::after {
-        content: "About";
-      }
-    }
-    
-    &--left-open {
-      top: 50%;
-      right: 100%;
-      transform: translate(50%, -50%) rotate(90deg);
-    }
-    
-    &--right-close {
-      top: 50%;
-      right: 100%;
-      transform: translate(50%, -50%) rotate(-90deg);
-      background-color: $color-orange-3;
-              
-      &::after {
-        content: "Projects";
-      }
-    }
-    
-    &--right-open {
-      top: 50%;
-      left: 100%;
-      transform: translate(-50%, -50%) rotate(-90deg);
-      background-color: $color-grey-1;
-    }
-    
-    &--bottom-close {
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: $color-green-3;
-              
-      &::after {
-        content: "Contact";
-      }
-    }
-    
-    &--bottom-open {
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: $color-grey-1;
-              
-      &::after {
-        content: "Return";
-        color: $color-white;
-      }
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: $font-size-h4;
+    font-family: $font-family-head;
+    color: $color-white;
+  }
+
+  &[class$='open'] {
+    z-index: -1;
+    background-color: $color-grey-1;
+
+    &::after {
+      content: 'Return';
     }
   }
+
+  &--left-close {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: $color-blue-3;
+
+    &::after {
+      content: 'About';
+    }
+  }
+
+  &--left-open {
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%) rotate(90deg);
+  }
+
+  &--right-close {
+    top: 50%;
+    right: 100%;
+    transform: translate(50%, -50%) rotate(-90deg);
+    background-color: $color-orange-3;
+
+    &::after {
+      content: 'Projects';
+    }
+  }
+
+  &--right-open {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    background-color: $color-grey-1;
+  }
+
+  &--bottom-close {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-green-3;
+
+    &::after {
+      content: 'Contact';
+    }
+  }
+
+  &--bottom-open {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-grey-1;
+
+    &::after {
+      content: 'Return';
+      color: $color-white;
+    }
+  }
+}
