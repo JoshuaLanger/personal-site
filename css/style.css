@@ -172,9 +172,11 @@ html {
       bottom: 0;
       background-color: #1559a5; }
   .page--right {
+    padding: 8rem 12rem;
     position: absolute;
     top: 0;
-    left: 100%; }
+    left: 100%;
+    overflow-y: scroll; }
     .page--right::after {
       content: '';
       width: 6rem;
@@ -252,3 +254,22 @@ html {
   width: 30rem;
   display: flex;
   justify-content: space-between; }
+
+.projects {
+  display: grid; }
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto; }
+  .project--img {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #fd7e0d;
+    grid-column: 1 / 2;
+    grid-row: 2 / -1; }
+  .project--heading {
+    grid-column: 2 / -1; }
+  .project--desc {
+    padding: 2rem 1rem;
+    grid-column: 2 / -1; }
