@@ -5,8 +5,62 @@
   grid-gap: 4rem;
 }
 
+.profile-img {
+  width: 20rem;
+  height: 20rem;
+  border: 1rem solid $color-blue-3;
+  border-radius: 50%;
+  object-fit: cover;
+  justify-self: center;
+}
+
 .about-box {
 }
 
+%list-style {
+  list-style: none;
+  font-size: 2rem;
+  font-family: $font-family-head;
+  color: $color-white;
+}
+
 .skill-box {
+  .skills {
+    @extend %list-style;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    i {
+      color: $color-blue-3;
+    }
+
+    .skill {
+      padding: 1rem 0;
+    }
+  }
+}
+
+.link-box {
+  .links {
+    @extend %list-style;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    i {
+      color: $color-blue-3;
+    }
+
+    li {
+      padding: 1rem 0;
+
+      .link {
+        text-decoration: none;
+        color: $color-white;
+
+        &::hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

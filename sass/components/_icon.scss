@@ -1,8 +1,12 @@
 .icon {
   width: 6rem;
   height: 6rem;
+  border-radius: 50%;
+  background-color: $color-grey-2;
+  font-size: $font-size-h3;
+  text-decoration: none;
+  color: $color-white;
   cursor: pointer;
-  fill: $color-white;
   display: flex;
   align-items: center;
   justify-content: center;
