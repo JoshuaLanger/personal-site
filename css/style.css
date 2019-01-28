@@ -113,7 +113,7 @@ html {
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%) rotate(90deg);
-    background-color: #1559a5; }
+    background-color: #1559A5; }
     .tab--left-close::after {
       content: 'About'; }
   .tab--left-open {
@@ -124,7 +124,7 @@ html {
     top: 50%;
     right: 100%;
     transform: translate(50%, -50%) rotate(-90deg);
-    background-color: #fd7e0d; }
+    background-color: #FD7E0D; }
     .tab--right-close::after {
       content: 'Projects'; }
   .tab--right-open {
@@ -136,7 +136,7 @@ html {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #0ac12a; }
+    background-color: #0AC12A; }
     .tab--bottom-close::after {
       content: 'Contact'; }
   .tab--bottom-open {
@@ -174,7 +174,7 @@ html {
       top: 0;
       right: 0;
       bottom: 0;
-      background-color: #1559a5; }
+      background-color: #1559A5; }
   .page--right {
     padding: 8rem 12rem;
     position: absolute;
@@ -188,7 +188,7 @@ html {
       top: 0;
       left: 0;
       bottom: 0;
-      background-color: #fd7e0d; }
+      background-color: #FD7E0D; }
   .page--bottom {
     padding: 8rem 12rem;
     position: absolute;
@@ -201,7 +201,7 @@ html {
       top: 0;
       left: 0;
       right: 0;
-      background-color: #0ac12a; }
+      background-color: #0AC12A; }
 
 .close {
   top: 0;
@@ -216,7 +216,7 @@ html {
 .profile-img {
   width: 20rem;
   height: 20rem;
-  border: 1rem solid #1559a5;
+  border: 1rem solid #1559A5;
   border-radius: 50%;
   object-fit: cover;
   justify-self: center; }
@@ -231,7 +231,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .skill-box .skills i {
-    color: #1559a5; }
+    color: #1559A5; }
   .skill-box .skills .skill {
     padding: 1rem 0; }
 
@@ -239,7 +239,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .link-box .links i {
-    color: #1559a5; }
+    color: #1559A5; }
   .link-box .links li {
     padding: 1rem 0; }
     .link-box .links li .link {
@@ -249,7 +249,6 @@ html {
         text-decoration: underline; }
 
 .contact-form {
-  border: 1px solid #0ac12a;
   padding: 3rem 4rem;
   display: grid;
   grid-template-columns: repeat(2, 30rem);
@@ -267,7 +266,7 @@ html {
     padding: 1rem 3rem;
     margin: 0 auto;
     grid-column: 1 / -1;
-    background-color: #0ac12a;
+    background-color: #0AC12A;
     font-size: 2.4rem;
     font-family: "Cabin", sans-serif;
     color: #ffffff; }
@@ -294,7 +293,7 @@ html {
   .project--img {
     width: 20rem;
     height: 20rem;
-    border: 1px solid #fd7e0d;
+    border: 1px solid #FD7E0D;
     grid-column: 1 / 2;
     grid-row: 2 / -1; }
   .project--heading {
