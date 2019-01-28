@@ -19,13 +19,16 @@
           Front-end JavaScript Web Developer from Minneapolis, MN
         </h4>
         <div class="icon-bar">
-          <div class="icon drop-shadow">1</div>
+          <object type="image/svg+xml" data="css/svg/github.svg" class="icon">
+            github
+          </object>
           <div class="icon drop-shadow">2</div>
           <div class="icon drop-shadow">3</div>
         </div>
       </div>
-      <div id="leftPage" class="page page--left close">
-        <div id="close" class="tab tab--left-close"></div>
+      </div>
+      <div id="leftPage" class="page page--left">
+        <div id="close" class="tab tab--left-close drop-shadow"></div>
         <div class="about-container">
           <img src="#" alt="Profile Image" class="profile-img" />
           <div class="about-box">
@@ -37,16 +40,35 @@
               eat: it was a hobbit-hole, and that means comfort.
             </p>
           </div>
+          <div class="skill-box">
+            <h3 class="heading-3">Skills</h3>
+            <h4 class="heading-4">Profient At</h4>
+            <ul class="skills">
+              <li class="skill">HTML5</li>
+              <li class="skill">CSS3</li>
+              <li class="skill">JavaScript</li>
+              <li class="skill">React</li>
+            </ul>
+          </div>
+          <div class="link-box">
+            <h3 class="heading-3">Links</h3>
+            <ul class="links"><li class="link"><a href="https://github.com/JoshuaLanger">GitHub</a></li>
+              <li class="link"><a href="https://codepen.io/joshual/">CodePen</a></li>
+              <li class="link"><a href="https://linkedin.com/in/josh-r-langer">LinkedIn</a></li>
+              <li class="link"><a href="#">Resume</a></li>
+            </ul>
+          </div>
         </div>
         <div id="open" class="tab tab--left-open"></div>
       </div>
+      </div>
       <div id="rightPage" class="page page--right">
-        <div id="close" class="tab tab--right-close"></div>
-        <div id="open" class="tab tab--right-open"></div>
+        <div id="close" class="tab tab--right-close drop-shadow"></div>
+        <div id="open" class="tab tab--right-open"></div> <!-- adding the drop-shadow class causes the after text to disappear? -->
       </div>
       <div id="bottomPage" class="page page--bottom">
-        <div id="close" class="tab tab--bottom-close"></div>
-        <div id="open" class="tab tab--bottom-open"></div>
+        <div id="close" class="tab tab--bottom-close drop-shadow"></div>
+        <div id="open" class="tab tab--bottom-open drop-shadow"></div>
       </div>
     </main>
 

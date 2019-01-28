@@ -68,16 +68,18 @@ html {
 .icon {
   width: 6rem;
   height: 6rem;
-  border-radius: 50%;
-  background-color: #464653;
-  color: #ffffff;
   cursor: pointer;
+  fill: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.1s ease-in-out; }
   .icon:hover {
     transform: scale(1.1); }
+  .icon--svg {
+    height: 5rem;
+    width: 5rem;
+    fill: #ffffff; }
 
 .tab {
   cursor: pointer;
@@ -123,6 +125,7 @@ html {
     transform: translate(-50%, -50%) rotate(-90deg);
     background-color: #16161d; }
   .tab--bottom-close {
+    top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #0ac12a; }
@@ -141,37 +144,63 @@ html {
   position: relative;
   height: 100vh;
   width: 100vw;
-  transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
+  background-color: #16161d;
+  transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .page--main {
-    display: flex;
     position: relative;
     padding: 8rem 16rem;
-    background-color: #16161d;
     margin: 0 auto;
     overflow: hidden; }
   .page--left {
     padding: 8rem 12rem;
     position: absolute;
     top: 0;
-    left: -100%;
-    background-color: #1559a5; }
+    left: -100%; }
+    .page--left::after {
+      content: '';
+      width: 6rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1559a5; }
   .page--right {
     position: absolute;
     top: 0;
-    left: 100%;
-    background-color: #fd7e0d; }
+    left: 100%; }
+    .page--right::after {
+      content: '';
+      width: 6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #fd7e0d; }
   .page--bottom {
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #0ac12a; }
+    left: 0; }
+    .page--bottom::after {
+      content: '';
+      height: 6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #0ac12a; }
 
 .close {
   top: 0;
   left: 0; }
 
 .about-container {
-  display: grid; }
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(20rem, 30rem));
+  grid-gap: 4rem; }
 
 .container {
   margin: auto;

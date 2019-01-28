@@ -2,13 +2,15 @@
   position: relative;
   height: 100vh;
   width: 100vw;
+  background-color: $color-grey-1;
   transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &--main {
-    display: flex;
     position: relative;
     padding: 8rem 16rem;
-    background-color: $color-grey-1;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -18,21 +20,48 @@
     position: absolute;
     top: 0;
     left: -100%;
-    background-color: $color-blue-3;
+
+    &::after {
+      content: '';
+      width: 6rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-blue-3;
+    }
   }
 
   &--right {
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: $color-orange-3;
+
+    &::after {
+      content: '';
+      width: 6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: $color-orange-3;
+    }
   }
 
   &--bottom {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: $color-green-3;
+
+    &::after {
+      content: '';
+      height: 6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-green-3;
+    }
   }
 }
 
