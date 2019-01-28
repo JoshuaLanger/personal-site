@@ -63,7 +63,7 @@
         <div id="open" class="tab tab--left-open"></div>
       </div>
       <!-- PROJECTS -->
-      <div id="rightPage" class="page page--right close">
+      <div id="rightPage" class="page page--right">
         <div id="close" class="tab tab--right-close drop-shadow"></div>
         <div class="projects">
           <div class="project">
@@ -75,8 +75,25 @@
         <div id="open" class="tab tab--right-open"></div> 
       </div>
       <!-- CONTACT -->
-      <div id="bottomPage" class="page page--bottom">
+      <div id="bottomPage" class="page page--bottom close">
         <div id="close" class="tab tab--bottom-close drop-shadow"></div>
+        <div class="container-contact">
+          <form action="GET" class="contact-form">
+              <div class="contact-form--field">
+                <h4 class="heading-4 contact-form--heading">Email</h4>
+                <input name="email" type="email" class="contact-form--input" />
+              </div>
+              <div class="contact-form--field">
+                <h4 class="heading-4 contact-form--heading">Subject</h4>
+                <input name="subject" type="subject" class="contact-form--input" />
+              </div>
+              <div id="contact-form-message" class="contact-form--field">
+                <h4 class="heading-4 contact-form--heading">Message</h4>
+                <textarea name="message" class="contact-form--input"></textarea>
+              </div>
+              <input type="submit" value="Submit" class="button contact-form--submit">
+          </form>
+        </div>
         <div id="open" class="tab tab--bottom-open drop-shadow"></div>
       </div>
     </main>

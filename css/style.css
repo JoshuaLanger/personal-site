@@ -186,6 +186,7 @@ html {
       bottom: 0;
       background-color: #fd7e0d; }
   .page--bottom {
+    padding: 8rem 12rem;
     position: absolute;
     top: 100%;
     left: 0; }
@@ -242,6 +243,24 @@ html {
       color: #ffffff; }
       .link-box .links li .link::hover {
         text-decoration: underline; }
+
+.contact-form {
+  border: 1px solid #0ac12a;
+  padding: 3rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 30rem);
+  grid-column-gap: 4rem; }
+  .contact-form--field {
+    padding-bottom: 2rem; }
+  .contact-form #contact-form-message {
+    grid-column: 1 / -1; }
+  .contact-form--heading {
+    padding-bottom: 0.5rem; }
+  .contact-form--input {
+    width: 100%; }
+  .contact-form--submit {
+    grid-column: 1 / -1;
+    width: auto; }
 
 .container {
   margin: auto;

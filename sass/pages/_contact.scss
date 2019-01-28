@@ -1,0 +1,31 @@
+.container-contact {
+}
+
+.contact-form {
+  border: 1px solid $color-green-3;
+  padding: 3rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 30rem);
+  grid-column-gap: 4rem;
+
+  &--field {
+    padding-bottom: 2rem;
+  }
+
+  #contact-form-message {
+    grid-column: 1 / -1;
+  }
+
+  &--heading {
+    padding-bottom: 0.5rem;
+  }
+
+  &--input {
+    width: 100%;
+  }
+
+  &--submit {
+    grid-column: 1 / -1;
+    width: auto;
+  }
+}
