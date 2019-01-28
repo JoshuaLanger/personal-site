@@ -32,7 +32,7 @@
     }
   }
 
-  &--right {
+  &--right { // Can't add "overflow" without removing tab
     padding: 8rem 12rem;
     position: absolute;
     top: 0;

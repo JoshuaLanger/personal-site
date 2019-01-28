@@ -1,26 +1,32 @@
 .projects {
+  max-height: 80vh;
   display: grid;
+  overflow: hidden scroll;
 }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, minmax(20rem, 40rem));
   grid-template-rows: auto auto;
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem;
 
   &--img {
-    width: 20rem;
+    width: 40rem;
     height: 20rem;
     border: 1px solid $color-orange-3;
     grid-column: 1 / 2;
-    grid-row: 2 / -1;
+    grid-row: 1 / -1;
+    justify-self: right;
   }
 
   &--heading {
     grid-column: 2 / -1;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $color-orange-3;
   }
 
   &--desc {
-    padding: 2rem 1rem;
     grid-column: 2 / -1;
   }
 }

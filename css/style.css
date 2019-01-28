@@ -291,20 +291,26 @@ html {
   justify-content: space-between; }
 
 .projects {
-  display: grid; }
+  max-height: 80vh;
+  display: grid;
+  overflow: hidden scroll; }
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto; }
+  grid-template-columns: repeat(2, minmax(20rem, 40rem));
+  grid-template-rows: auto auto;
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem; }
   .project--img {
-    width: 20rem;
+    width: 40rem;
     height: 20rem;
     border: 1px solid #FD7E0D;
     grid-column: 1 / 2;
-    grid-row: 2 / -1; }
+    grid-row: 1 / -1;
+    justify-self: right; }
   .project--heading {
-    grid-column: 2 / -1; }
+    grid-column: 2 / -1;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #FD7E0D; }
   .project--desc {
-    padding: 2rem 1rem;
     grid-column: 2 / -1; }
