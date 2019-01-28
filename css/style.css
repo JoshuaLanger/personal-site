@@ -143,7 +143,7 @@ html {
     top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #16161d; }
+    background-color: #2F2E38; }
     .tab--bottom-open::after {
       content: 'Return';
       color: #ffffff; }
@@ -180,7 +180,8 @@ html {
     position: absolute;
     top: 0;
     left: 100%;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    overflow-x: hidden; }
     .page--right::after {
       content: '';
       width: 6rem;
@@ -250,6 +251,7 @@ html {
 
 .contact-form {
   padding: 3rem 4rem;
+  border-top: 1rem solid #008D19;
   display: grid;
   grid-template-columns: repeat(2, 30rem);
   grid-column-gap: 4rem; }
@@ -262,6 +264,9 @@ html {
   .contact-form--input {
     width: 100%;
     padding: 1rem; }
+    .contact-form--input:focus {
+      border: 2px solid #6FE183;
+      outline: none; }
   .contact-form--submit {
     padding: 1rem 3rem;
     margin: 0 auto;
@@ -269,7 +274,11 @@ html {
     background-color: #0AC12A;
     font-size: 2.4rem;
     font-family: "Cabin", sans-serif;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: all 0.2s ease-in-out; }
+    .contact-form--submit:focus, .contact-form--submit:hover {
+      border: none;
+      background-color: #6FE183; }
 
 .container {
   margin: auto;

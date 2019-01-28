@@ -3,6 +3,7 @@
 
 .contact-form {
   padding: 3rem 4rem;
+  border-top: 1rem solid $color-green-2;
   display: grid;
   grid-template-columns: repeat(2, 30rem);
   grid-column-gap: 4rem;
@@ -22,6 +23,11 @@
   &--input {
     width: 100%;
     padding: 1rem;
+
+    &:focus {
+      border: 2px solid $color-green-5;
+      outline: none;
+    }
   }
 
   &--submit {
@@ -32,5 +38,12 @@
     font-size: $font-size-h4;
     font-family: $font-family-head;
     color: $color-white;
+    transition: all 0.2s ease-in-out;
+
+    &:focus,
+    &:hover {
+      border: none;
+      background-color: $color-green-5;
+    }
   }
 }
