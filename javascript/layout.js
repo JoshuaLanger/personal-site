@@ -9,8 +9,6 @@ for (var i = 1; i < pageList.length; i++) {
   openTabArr.push(openTab);
 }
 
-console.log(openTabArr)
-
 closeTabArr.forEach(tab => {
   tab.addEventListener('click', function() {
     var page = tab.parentElement;

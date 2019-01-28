@@ -22,10 +22,16 @@
 
   &--input {
     width: 100%;
+    padding: 1rem;
   }
 
   &--submit {
+    padding: 1rem 3rem;
+    margin: 0 auto;
     grid-column: 1 / -1;
-    width: auto;
+    background-color: $color-green-3;
+    font-size: $font-size-h4;
+    font-family: $font-family-head;
+    color: $color-white;
   }
 }
