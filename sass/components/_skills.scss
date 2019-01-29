@@ -1,0 +1,18 @@
+.skill-box {
+  .skills {
+    list-style: none;
+    font-size: 2rem;
+    font-family: $font-family-head;
+    color: $color-white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    i {
+      color: $color-blue-3;
+    }
+
+    .skill {
+      padding: 1rem 0;
+    }
+  }
+}

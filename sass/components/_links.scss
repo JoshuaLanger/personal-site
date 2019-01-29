@@ -1,0 +1,27 @@
+.link-box {
+  .links {
+    list-style: none;
+    font-size: 2rem;
+    font-family: $font-family-head;
+    color: $color-white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    i {
+      color: $color-blue-3;
+    }
+
+    li {
+      padding: 1rem 0;
+
+      .link {
+        text-decoration: none;
+        color: $color-white;
+
+        &::hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
