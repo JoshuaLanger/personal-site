@@ -30,6 +30,18 @@ html {
   /* Sets 1rem to 10px while being more browser-friendly */
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 1rem; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background: #2f2e38; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #797986; }
+
 *,
 *::before,
 *::after {
@@ -291,11 +303,17 @@ html {
   display: flex;
   justify-content: space-between; }
 
+::-webkit-scrollbar-thumb {
+  background: #b95700; }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff9e48; }
+
 .projects {
+  max-height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80rem, 1fr));
-  grid-column-gap: 4rem;
-  overflow: hidden scroll; }
+  grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+  grid-column-gap: 12rem;
+  overflow-y: scroll; }
 
 .project {
   display: grid;
@@ -305,7 +323,7 @@ html {
   grid-row-gap: 2rem; }
   .project--img {
     width: 40rem;
-    height: 20rem;
+    height: 24rem;
     background-size: cover;
     border: 1px solid #763800;
     grid-column: 1 / 2;
@@ -323,5 +341,8 @@ html {
     grid-column: 1 / -1; }
   .project--desc {
     grid-column: 1 / -1; }
-  .project i {
-    color: #b95700; }
+  .project .fab,
+  .project .fas {
+    color: #fd7e0d; }
+  .project .skill:hover {
+    color: #ff9e48; }
