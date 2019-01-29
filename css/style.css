@@ -294,24 +294,31 @@ html {
 .projects {
   max-height: 80vh;
   display: grid;
+  grid-template-columns: repeat(auto-fill, 80rem);
   overflow: hidden scroll; }
 
 .project {
   display: grid;
-  grid-template-columns: repeat(2, minmax(20rem, 40rem));
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
   grid-column-gap: 4rem;
   grid-row-gap: 2rem; }
   .project--img {
     width: 40rem;
     height: 20rem;
-    border: 1px solid #fd7e0d;
+    background-size: cover;
+    border: 1px solid #763800;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    justify-self: right; }
-  .project--heading {
+    justify-self: right;
+    align-self: center; }
+  .project--info {
     grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .project--heading {
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #fd7e0d; }
+    border-bottom: 0.5rem solid #fd7e0d;
+    grid-column: 1 / -1; }
   .project--desc {
-    grid-column: 2 / -1; }
+    grid-column: 1 / -1; }
