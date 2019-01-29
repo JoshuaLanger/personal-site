@@ -292,9 +292,9 @@ html {
   justify-content: space-between; }
 
 .projects {
-  max-height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 80rem);
+  grid-template-columns: repeat(auto-fit, minmax(80rem, 1fr));
+  grid-column-gap: 4rem;
   overflow: hidden scroll; }
 
 .project {
@@ -313,6 +313,7 @@ html {
     justify-self: right;
     align-self: center; }
   .project--info {
+    max-width: 120rem;
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -323,4 +324,4 @@ html {
   .project--desc {
     grid-column: 1 / -1; }
   .project i {
-    color: #fd7e0d; }
+    color: #b95700; }

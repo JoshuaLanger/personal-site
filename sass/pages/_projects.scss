@@ -1,7 +1,7 @@
 .projects {
-  max-height: 80vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 80rem);
+  grid-template-columns: repeat(auto-fit, minmax(80rem, 1fr));
+  grid-column-gap: 4rem;
   overflow: hidden scroll;
 }
 
@@ -24,6 +24,7 @@
   }
 
   &--info {
+    max-width: 120rem;
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,6 +41,6 @@
   }
 
   i {
-    color: $color-orange-3;
+    color: $color-orange-2;
   }
 }
