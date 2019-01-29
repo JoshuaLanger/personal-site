@@ -95,15 +95,15 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
-  .link-box .links i {
-    color: #1559a5; }
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
   .link-box .links li {
     padding: 1rem 0; }
     .link-box .links li .link {
       text-decoration: none;
       color: #ffffff; }
-      .link-box .links li .link::hover {
+      .link-box .links li .link:hover, .link-box .links li .link:focus {
+        border: none;
+        outline: none;
         text-decoration: underline; }
 
 .skill-box .skills {
@@ -112,9 +112,7 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
-  .skill-box .skills i {
-    color: #1559a5; }
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
   .skill-box .skills .skill {
     padding: 1rem 0; }
 
@@ -324,3 +322,5 @@ html {
     grid-column: 1 / -1; }
   .project--desc {
     grid-column: 1 / -1; }
+  .project i {
+    color: #fd7e0d; }

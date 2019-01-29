@@ -5,11 +5,7 @@
     font-family: $font-family-head;
     color: $color-white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    i {
-      color: $color-blue-3;
-    }
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 
     .skill {
       padding: 1rem 0;
