@@ -217,6 +217,40 @@ html {
       flex-direction: column;
       text-align: center; } }
 
+.mobile-nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  background-image: linear-gradient(#2f2e38, #16161d); }
+  @media screen and (min-width: 48em) {
+    .mobile-nav {
+      display: none; } }
+  .mobile-nav--links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .mobile-nav--link {
+    font-size: 2.4rem;
+    font-family: "Cabin", sans-serif; }
+    .mobile-nav--link a:link,
+    .mobile-nav--link a:visited {
+      text-decoration: none;
+      color: #ffffff; }
+    .mobile-nav--link #link1 {
+      color: #719fd3; }
+    .mobile-nav--link #link2 {
+      color: #ffbb7e; }
+    .mobile-nav--link #link3 {
+      color: #6fe183; }
+    .mobile-nav--link a:hover,
+    .mobile-nav--link a:focus {
+      outline: none;
+      border: none;
+      text-decoration: underline; }
+
 .page {
   position: relative;
   height: 100vh;

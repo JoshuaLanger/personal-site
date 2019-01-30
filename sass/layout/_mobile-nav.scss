@@ -1,0 +1,49 @@
+.mobile-nav {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  background-image: linear-gradient($color-grey-2, $color-grey-1);
+
+  @media screen and (min-width: $bp-lg) {
+    display: none;
+  }
+
+  &--links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &--link {
+    font-size: $font-size-h4;
+    font-family: $font-family-head;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    #link1 {
+      color: $color-blue-5;
+    }
+
+    #link2 {
+      color: $color-orange-5;
+    }
+
+    #link3 {
+      color: $color-green-5;
+    }
+
+    a:hover,
+    a:focus {
+      outline: none;
+      border: none;
+      text-decoration: underline;
+    }
+  }
+}
