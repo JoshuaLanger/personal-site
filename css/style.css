@@ -29,6 +29,9 @@ html {
   font-size: 62.5%;
   /* Sets 1rem to 10px while being more browser-friendly */
   box-sizing: border-box; }
+  @media screen and (max-width: 48em) {
+    html {
+      font-size: 50%; } }
 
 ::-webkit-scrollbar {
   width: 1rem; }
@@ -107,7 +110,7 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
   .link-box .links li {
     padding: 1rem 0; }
     .link-box .links li .link {
@@ -124,7 +127,7 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); }
   .skill-box .skills .skill {
     padding: 1rem 0; }
 
@@ -232,7 +235,10 @@ html {
     padding: 8rem 12rem;
     position: absolute;
     top: 0;
-    left: -100%; }
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     @media screen and (max-width: 60em) {
       .page--left {
         padding: 8rem; } }
@@ -342,6 +348,10 @@ html {
   border-radius: 50%;
   object-fit: cover;
   justify-self: center; }
+
+.fas,
+.fab {
+  color: #3d76b5; }
 
 .contact-form {
   padding: 3rem 4rem;

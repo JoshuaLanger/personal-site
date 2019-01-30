@@ -1,6 +1,10 @@
 html {
   font-size: 62.5%; /* Sets 1rem to 10px while being more browser-friendly */
   box-sizing: border-box;
+
+  @media screen and (max-width: $bp-lg) {
+    font-size: 50%;
+  }
 }
 
 ::-webkit-scrollbar {

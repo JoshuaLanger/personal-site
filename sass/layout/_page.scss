@@ -27,6 +27,9 @@
     position: absolute;
     top: 0;
     left: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: $bp-xl) {
       padding: 8rem;

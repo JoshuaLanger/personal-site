@@ -5,7 +5,7 @@
     font-family: $font-family-head;
     color: $color-white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 
     li {
       padding: 1rem 0;
