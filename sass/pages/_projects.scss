@@ -22,6 +22,10 @@
   grid-column-gap: 4rem;
   grid-row-gap: 2rem;
 
+  @media screen and (max-width: $bp-xl) {
+    margin-bottom: 10rem;
+  }
+
   &--img {
     width: 40rem;
     background-size: 100% 100%;
@@ -30,6 +34,12 @@
     grid-row: 1 / -1;
     justify-self: right;
     align-self: center;
+
+    @media screen and (max-width: $bp-xl) {
+      width: 100%;
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
   }
 
   &--info {
@@ -37,6 +47,11 @@
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: $bp-xl) {
+      grid-column: 1 / -1;
+      grid-row: 2 / -1;
+    }
   }
 
   &--heading {

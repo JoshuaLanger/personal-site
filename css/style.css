@@ -107,7 +107,7 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
   .link-box .links li {
     padding: 1rem 0; }
     .link-box .links li .link {
@@ -124,7 +124,7 @@ html {
   font-family: "Cabin", sans-serif;
   color: #ffffff;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
   .skill-box .skills .skill {
     padding: 1rem 0; }
 
@@ -220,6 +220,9 @@ html {
     position: absolute;
     top: 0;
     left: 100%; }
+    @media screen and (max-width: 60em) {
+      .page--right {
+        padding: 8rem; } }
     .page--right::after {
       content: '';
       width: 6rem;
@@ -322,6 +325,9 @@ html {
   grid-template-rows: auto auto;
   grid-column-gap: 4rem;
   grid-row-gap: 2rem; }
+  @media screen and (max-width: 60em) {
+    .project {
+      margin-bottom: 10rem; } }
   .project--img {
     width: 40rem;
     background-size: 100% 100%;
@@ -330,11 +336,20 @@ html {
     grid-row: 1 / -1;
     justify-self: right;
     align-self: center; }
+    @media screen and (max-width: 60em) {
+      .project--img {
+        width: 100%;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2; } }
   .project--info {
     max-width: 120rem;
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+    @media screen and (max-width: 60em) {
+      .project--info {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1; } }
   .project--heading {
     padding-bottom: 0.5rem;
     border-bottom: 0.5rem solid #fd7e0d;

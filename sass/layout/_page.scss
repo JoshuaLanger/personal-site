@@ -40,6 +40,10 @@
     top: 0;
     left: 100%;
 
+    @media screen and (max-width: $bp-xl) {
+      padding: 8rem;
+    }
+
     &::after {
       content: '';
       width: 6rem;
