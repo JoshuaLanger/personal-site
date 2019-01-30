@@ -193,6 +193,24 @@ html {
       content: 'Return';
       color: #ffffff; }
 
+.footer {
+  padding: 2rem 8rem;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between; }
+  .footer--left {
+    float: left; }
+  .footer--right {
+    float: right; }
+  .footer a {
+    color: currentColor; }
+    .footer a:focus, .footer a:hover {
+      outline: none;
+      border: none;
+      color: #0ac12a; }
+
 .page {
   position: relative;
   height: 100vh;

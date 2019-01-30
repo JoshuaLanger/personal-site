@@ -1,0 +1,36 @@
+.footer {
+  padding: 2rem 8rem;
+  font-size: $font-size-body;
+  font-family: $font-family-body;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+
+  a {
+    color: currentColor;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: none;
+      color: $color-green-3;
+    }
+  }
+
+  //   @media screen and (min-width: $bp-lg) {
+  //     z-index: 100;
+  //     position: fixed;
+  //     bottom: 0;
+  //     background-color: transparent;
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+}
