@@ -1,8 +1,10 @@
 .footer {
+  width: 80rem;
   font-size: $font-size-body;
   font-family: $font-family-body;
   color: $color-white;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
   a {
