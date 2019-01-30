@@ -21,14 +21,12 @@
   <body>
     <nav class="mobile-nav">
       <ul class="mobile-nav--links">
+        <li class="mobile-nav--link"><a id="link1" href="#about">About</a></li>
         <li class="mobile-nav--link">
-          <a id="link1" href="#leftPage">About</a>
+          <a id="link2" href="#projects">Projects</a>
         </li>
         <li class="mobile-nav--link">
-          <a id="link2" href="#rightPage">Projects</a>
-        </li>
-        <li class="mobile-nav--link">
-          <a id="link3" href="#bottomPage">Contact</a>
+          <a id="link3" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -39,21 +37,21 @@
           Front-end JavaScript Web Developer from Minneapolis, MN
         </h4>
         <div class="icon-bar">
-          <a href="https://github.com/JoshuaLanger" class="icon drop-shadow"
+          <a href="https://github.com/JoshuaLanger" target="_blank" class="icon drop-shadow"
             ><i class="fab fa-github"></i
           ></a>
-          <a href="https://codepen.io/joshual/" class="icon drop-shadow"
+          <a href="https://codepen.io/joshual/" target="_blank" class="icon drop-shadow"
             ><i class="fab fa-codepen"></i
           ></a>
           <a
             href="https://linkedin.com/in/josh-r-langer"
-            class="icon drop-shadow"
+            class="icon drop-shadow" target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
         </div>
       </div>
       <!-- ABOUT -->
-      <div id="leftPage" class="page page--left">
+      <div id="about" class="page page--left">
         <div id="close" class="tab tab--left-close drop-shadow"></div>
         <div class="about-container">
           <img
@@ -64,10 +62,12 @@
           <div class="about-box">
             <h3 class="heading-3 mb-sm">About Me</h3>
             <p class="paragraph">
-              In a hole in the ground there lived a hobbit. Not a nasty, dirty,
-              wet hole, filled with the ends of worms and an oozy smell, nor yet
-              a dry, bare, sandy hole with nothing in it to sit down on or to
-              eat: it was a hobbit-hole, and that means comfort.
+              I love buildng and making stuff. As a kid I was obsessed with LEGO
+              sets, always making my own worlds and characters. Now I'm making
+              website and apps that are accessible, responsive, and fun to use.
+              I'm also a voracious reader and love to learn everything in
+              history and the latest trends. You can check out the projects I've
+              worked on and send a message. Until later, take care.
             </p>
           </div>
           <div class="skill-box">
@@ -76,6 +76,7 @@
             <ul class="skills">
               <li class="skill"><i class="fab fa-html5"></i> HTML5</li>
               <li class="skill"><i class="fab fa-css3"></i> CSS3</li>
+              <li class="skill"><i class="fab fa-sass"></i> Sass</li>
               <li class="skill"><i class="fab fa-js"></i> JavaScript</li>
               <li class="skill"><i class="fab fa-react"></i> React</li>
             </ul>
@@ -84,22 +85,22 @@
             <h3 class="heading-3 mb-sm">Links</h3>
             <ul class="links">
               <li>
-                <a class="link" href="https://github.com/JoshuaLanger"
+                <a class="link" href="https://github.com/JoshuaLanger" target="_blank"
                   ><i class="fab fa-github"></i> GitHub</a
                 >
               </li>
               <li>
-                <a class="link" href="https://codepen.io/joshual/"
+                <a class="link" href="https://codepen.io/joshual/" target="_blank"
                   ><i class="fab fa-codepen"></i> CodePen</a
                 >
               </li>
               <li>
-                <a class="link" href="https://linkedin.com/in/josh-r-langer"
+                <a class="link" href="https://linkedin.com/in/josh-r-langer" target="_blank"
                   ><i class="fab fa-linkedin"></i> LinkedIn</a
                 >
               </li>
               <li>
-                <a class="link" href="#"
+                <a class="link" href="#" target="_blank"
                   ><i class="fas fa-file-alt"></i> Resume</a
                 >
               </li>
@@ -109,7 +110,7 @@
         <div id="open" class="tab tab--left-open"></div>
       </div>
       <!-- PROJECTS -->
-      <div id="rightPage" class="page page--right">
+      <div id="projects" class="page page--right">
         <div id="close" class="tab tab--right-close drop-shadow"></div>
         <div class="projects">
           <h3 class="heading-3 mb-md">Projects</h3>
@@ -119,7 +120,7 @@
               src="images/quick-draw.png"
               alt="project image 1"
               class="project--img"
-            />
+            /> <!-- Add direct links to project images -->
             <div class="project--info">
               <h3 class="heading-3 project--heading mb-md">Quick Draw!</h3>
               <p class="paragraph project--desc mb-md">
@@ -141,13 +142,13 @@
                   <li>
                     <a
                       class="link"
-                      href="https://github.com/JoshuaLanger/quick-draw-app"
+                      href="https://github.com/JoshuaLanger/quick-draw-app" target="_blank"
                     >
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </li>
                   <li>
-                    <a class="link" href="https://quick-draw.app/"
+                    <a class="link" href="https://quick-draw.app/" target="_blank"
                       ><i class="fas fa-globe"></i> Website</a
                     >
                   </li>
@@ -184,12 +185,13 @@
                     <a
                       class="link"
                       href="https://github.com/JoshuaLanger/personal-site-prototype"
+                      target="_blank"
                     >
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </li>
                   <li>
-                    <a class="link" href="https://joshlanger.me/"
+                    <a class="link" href="https://joshlanger.me/" target="_blank"
                       ><i class="fas fa-globe"></i> Website</a
                     >
                   </li>
@@ -354,7 +356,7 @@
         <div id="open" class="tab tab--right-open"></div>
       </div>
       <!-- CONTACT -->
-      <div id="bottomPage" class="page page--bottom">
+      <div id="contact" class="page page--bottom">
         <div id="close" class="tab tab--bottom-close drop-shadow"></div>
         <div class="container-contact">
           <h3 class="heading-3 mb-sm">Let's Talk</h3>
@@ -397,7 +399,7 @@
           <p>&copy; 2019 Joshua Langer</p>
           <p>
             Background pattern is from
-            <a href="https://www.heropatterns.com/">Hero Patterns</a>
+            <a href="https://www.heropatterns.com/ target="_blank">Hero Patterns</a>
           </p>
         </footer>
       </div>
