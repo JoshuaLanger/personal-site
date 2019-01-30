@@ -194,21 +194,18 @@ html {
       color: #ffffff; }
 
 .footer {
-  padding: 2rem 8rem;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
   display: flex;
   justify-content: space-between; }
-  .footer--left {
-    float: left; }
-  .footer--right {
-    float: right; }
   .footer a {
     color: currentColor; }
     .footer a:focus, .footer a:hover {
       outline: none;
       border: none;
+      color: #6fe183; }
+    .footer a:visited {
       color: #0ac12a; }
 
 .page {
