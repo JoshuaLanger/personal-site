@@ -4,7 +4,8 @@
   "description": "Creating a new site from scratch",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "build:sass": "node-sass sass/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
