@@ -5,6 +5,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
+  @media screen and (max-width: $bp-lg) {
+    height: 100vh;
+    justify-content: center;
+  }
 }
 
 .icon-bar {

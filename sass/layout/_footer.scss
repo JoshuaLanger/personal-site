@@ -21,4 +21,9 @@
       color: $color-green-3;
     }
   }
+
+  @media screen and (max-width: $bp-lg) {
+    flex-direction: column;
+    text-align: center;
+  }
 }

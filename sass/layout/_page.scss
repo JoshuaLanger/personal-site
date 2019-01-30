@@ -6,6 +6,12 @@
   background-image: url('svg/circuit-board.svg');
   transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
+  @media screen and (max-width: $bp-lg) {
+    height: auto;
+    padding: 0;
+    position: static;
+  }
+
   &--main {
     position: relative;
     padding: 8rem 16rem;
@@ -14,11 +20,7 @@
 
     @media screen and (max-width: $bp-lg) {
       padding: 0;
-      position: relative;
-      top: 0;
-      left: 0;
-      overflow-y: scroll;
-      overflow-x: hidden;
+      position: static;
     }
   }
 
@@ -40,8 +42,6 @@
       position: relative;
       top: 100%;
       left: 0;
-      overflow-y: scroll;
-      overflow-x: hidden;
     }
 
     &::after {
@@ -80,8 +80,6 @@
       position: relative;
       top: 100%;
       left: 0;
-      overflow-y: scroll;
-      overflow-x: hidden;
     }
 
     &::after {
@@ -123,8 +121,6 @@
       position: relative;
       top: 100%;
       left: 0;
-      overflow-y: scroll;
-      overflow-x: hidden;
     }
 
     &::after {

@@ -212,6 +212,10 @@ html {
       color: #6fe183; }
     .footer a:visited {
       color: #0ac12a; }
+  @media screen and (max-width: 48em) {
+    .footer {
+      flex-direction: column;
+      text-align: center; } }
 
 .page {
   position: relative;
@@ -220,6 +224,11 @@ html {
   background-color: #000000;
   background-image: url("svg/circuit-board.svg");
   transition: all 0.7s cubic-bezier(0.5, -0.5, 0.5, 1.5); }
+  @media screen and (max-width: 48em) {
+    .page {
+      height: auto;
+      padding: 0;
+      position: static; } }
   .page--main {
     position: relative;
     padding: 8rem 16rem;
@@ -228,11 +237,7 @@ html {
     @media screen and (max-width: 48em) {
       .page--main {
         padding: 0;
-        position: relative;
-        top: 0;
-        left: 0;
-        overflow-y: scroll;
-        overflow-x: hidden; } }
+        position: static; } }
   .page--left {
     padding: 8rem 12rem;
     position: absolute;
@@ -249,9 +254,7 @@ html {
         padding-top: 12rem;
         position: relative;
         top: 100%;
-        left: 0;
-        overflow-y: scroll;
-        overflow-x: hidden; } }
+        left: 0; } }
     .page--left::after {
       content: '';
       width: 6rem;
@@ -281,9 +284,7 @@ html {
         padding-top: 12rem;
         position: relative;
         top: 100%;
-        left: 0;
-        overflow-y: scroll;
-        overflow-x: hidden; } }
+        left: 0; } }
     .page--right::after {
       content: '';
       width: 6rem;
@@ -317,9 +318,7 @@ html {
         padding-top: 12rem;
         position: relative;
         top: 100%;
-        left: 0;
-        overflow-y: scroll;
-        overflow-x: hidden; } }
+        left: 0; } }
     .page--bottom::after {
       content: '';
       height: 6rem;
@@ -346,6 +345,12 @@ html {
   display: grid;
   grid-template-columns: repeat(2, minmax(20rem, 30rem));
   grid-gap: 4rem; }
+  @media screen and (max-width: 48em) {
+    .about-container {
+      grid-template-columns: 1fr; } }
+  @media screen and (max-width: 25em) {
+    .about-container {
+      grid-template-columns: 1fr; } }
 
 .profile-img {
   width: 20rem;
@@ -355,12 +360,17 @@ html {
   object-fit: cover;
   justify-self: center; }
 
-.fas,
-.fab {
+.skill-box .fas,
+.skill-box .fab,
+.link-box .fas,
+.link-box .fab {
   color: #3d76b5; }
 
 .container-contact {
   max-width: 80rem; }
+  @media screen and (max-width: 40em) {
+    .container-contact {
+      width: 100%; } }
 
 .contact-form {
   padding: 3rem 4rem;
@@ -368,6 +378,10 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 30rem);
   grid-column-gap: 4rem; }
+  @media screen and (max-width: 40em) {
+    .contact-form {
+      padding: 3rem 0;
+      grid-template-columns: 1fr; } }
   .contact-form--field {
     padding-bottom: 2rem; }
   .contact-form #contact-form-message {
@@ -400,6 +414,10 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center; }
+  @media screen and (max-width: 48em) {
+    .container {
+      height: 100vh;
+      justify-content: center; } }
 
 .icon-bar {
   width: 30rem;

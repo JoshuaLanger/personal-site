@@ -1,5 +1,9 @@
 .container-contact {
   max-width: 80rem;
+
+  @media screen and (max-width: $bp-md) {
+    width: 100%;
+  }
 }
 
 .contact-form {
@@ -8,6 +12,11 @@
   display: grid;
   grid-template-columns: repeat(2, 30rem);
   grid-column-gap: 4rem;
+
+  @media screen and (max-width: $bp-md) {
+    padding: 3rem 0;
+    grid-template-columns: 1fr;
+  }
 
   &--field {
     padding-bottom: 2rem;

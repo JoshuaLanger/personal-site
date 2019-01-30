@@ -3,6 +3,14 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(20rem, 30rem));
   grid-gap: 4rem;
+
+  @media screen and (max-width: $bp-lg) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .profile-img {
@@ -14,7 +22,10 @@
   justify-self: center;
 }
 
-.fas,
-.fab {
-  color: $color-blue-4;
+.skill-box,
+.link-box {
+  .fas,
+  .fab {
+    color: $color-blue-4;
+  }
 }
