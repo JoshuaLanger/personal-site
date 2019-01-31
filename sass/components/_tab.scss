@@ -4,6 +4,7 @@
   width: 36rem;
   position: absolute;
   border-radius: 10rem;
+  transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: $bp-lg) {
     display: none;
@@ -26,6 +27,7 @@
 
     &::after {
       content: 'Return';
+      color: $color-white;
     }
   }
 
@@ -35,12 +37,13 @@
     transform: translate(-50%, -50%) rotate(90deg);
     background-color: $color-blue-3;
 
-    @media screen and (max-width: $bp-lg) {
-      display: none;
-    }
-
     &::after {
       content: 'About';
+    }
+
+    &:hover {
+      transform: translate(-48%, -50%) rotate(90deg);
+      background-color: $color-blue-4;
     }
   }
 
@@ -48,6 +51,11 @@
     top: 50%;
     right: 100%;
     transform: translate(50%, -50%) rotate(90deg);
+
+    &:hover {
+      transform: translate(52%, -50%) rotate(90deg);
+      background-color: $color-grey-3;
+    }
   }
 
   &--right-close {
@@ -59,13 +67,22 @@
     &::after {
       content: 'Projects';
     }
+
+    &:hover {
+      transform: translate(48%, -50%) rotate(-90deg);
+      background-color: $color-orange-4;
+    }
   }
 
   &--right-open {
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%) rotate(-90deg);
-    background-color: $color-grey-1;
+
+    &:hover {
+      transform: translate(-52%, -50%) rotate(-90deg);
+      background-color: $color-grey-3;
+    }
   }
 
   &--bottom-close {
@@ -76,6 +93,11 @@
 
     &::after {
       content: 'Contact';
+    }
+
+    &:hover {
+      transform: translate(-50%, -52%);
+      background-color: $color-green-4;
     }
   }
 
@@ -88,6 +110,11 @@
     &::after {
       content: 'Return';
       color: $color-white;
+    }
+
+    &:hover {
+      transform: translate(-50%, -52%);
+      background-color: $color-grey-3;
     }
   }
 }
