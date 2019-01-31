@@ -507,6 +507,7 @@ html {
   justify-content: space-between; }
   .icon-bar a:focus,
   .icon-bar a:hover {
+    transform: translateY(-0.5rem);
     border: 2px solid #ffffff;
     outline: none; }
 
