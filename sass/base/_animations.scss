@@ -1,0 +1,32 @@
+@keyframes left-page-in {
+  from {
+    top: 0;
+    left: -200%;
+  }
+  to {
+    top: 0;
+    left: -100%;
+  }
+}
+
+@keyframes right-page-in {
+  from {
+    top: 0;
+    left: 200%;
+  }
+  to {
+    top: 0;
+    left: 100%;
+  }
+}
+
+@keyframes bottom-page-in {
+  from {
+    top: 200%;
+    left: 0;
+  }
+  to {
+    top: 100%;
+    left: 0;
+  }
+}

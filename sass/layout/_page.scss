@@ -32,8 +32,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: left-page-in 1s 0.5s backwards cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
     @media screen and (max-width: $bp-xl) {
+      animation: none !important;
       padding: 8rem;
     }
 
@@ -70,8 +72,10 @@
     position: absolute;
     top: 0;
     left: 100%;
+    animation: right-page-in 1s 0.8s backwards cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
     @media screen and (max-width: $bp-xl) {
+      animation: none !important;
       padding: 8rem;
     }
 
@@ -111,8 +115,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: bottom-page-in 1s 1.1s backwards
+      cubic-bezier(0.5, -0.5, 0.5, 1.5);
 
     @media screen and (max-width: $bp-xl) {
+      animation: none !important;
       padding: 8rem;
     }
 

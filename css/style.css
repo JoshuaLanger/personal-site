@@ -25,6 +25,30 @@
 .drop-shadow {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
 
+@keyframes left-page-in {
+  from {
+    top: 0;
+    left: -200%; }
+  to {
+    top: 0;
+    left: -100%; } }
+
+@keyframes right-page-in {
+  from {
+    top: 0;
+    left: 200%; }
+  to {
+    top: 0;
+    left: 100%; } }
+
+@keyframes bottom-page-in {
+  from {
+    top: 200%;
+    left: 0; }
+  to {
+    top: 100%;
+    left: 0; } }
+
 html {
   font-size: 62.5%;
   /* Sets 1rem to 10px while being more browser-friendly */
@@ -154,8 +178,7 @@ html {
     z-index: -1;
     background-color: #2f2e38; }
     .tab[class$='open']::after {
-      content: 'Return';
-      color: #ffffff; }
+      content: 'Return'; }
   .tab--left-close {
     top: 50%;
     left: 100%;
@@ -295,9 +318,11 @@ html {
     left: -100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    animation: left-page-in 1s 0.5s backwards cubic-bezier(0.5, -0.5, 0.5, 1.5); }
     @media screen and (max-width: 60em) {
       .page--left {
+        animation: none !important;
         padding: 8rem; } }
     @media screen and (max-width: 48em) {
       .page--left {
@@ -325,9 +350,11 @@ html {
     padding: 8rem 12rem;
     position: absolute;
     top: 0;
-    left: 100%; }
+    left: 100%;
+    animation: right-page-in 1s 0.8s backwards cubic-bezier(0.5, -0.5, 0.5, 1.5); }
     @media screen and (max-width: 60em) {
       .page--right {
+        animation: none !important;
         padding: 8rem; } }
     @media screen and (max-width: 48em) {
       .page--right {
@@ -359,9 +386,11 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    animation: bottom-page-in 1s 1.1s backwards cubic-bezier(0.5, -0.5, 0.5, 1.5); }
     @media screen and (max-width: 60em) {
       .page--bottom {
+        animation: none !important;
         padding: 8rem; } }
     @media screen and (max-width: 48em) {
       .page--bottom {
