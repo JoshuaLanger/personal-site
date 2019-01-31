@@ -17,10 +17,14 @@
     padding: 8rem 16rem;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: $bp-lg) {
       padding: 0;
       position: static;
+      flex-direction: column;
     }
   }
 

@@ -304,11 +304,15 @@ html {
     position: relative;
     padding: 8rem 16rem;
     margin: 0 auto;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     @media screen and (max-width: 48em) {
       .page--main {
         padding: 0;
-        position: static; } }
+        position: static;
+        flex-direction: column; } }
   .page--left {
     padding: 8rem 12rem;
     position: absolute;
@@ -486,7 +490,6 @@ html {
 
 .container {
   position: relative;
-  top: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
