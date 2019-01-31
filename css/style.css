@@ -460,7 +460,8 @@ html {
 
 .projects {
   height: 100%;
-  border-bottom: 1rem solid #fd7e0d;
+  padding-top: 6rem;
+  border-top: 1rem solid #fd7e0d;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
   grid-column-gap: 12rem;
@@ -486,19 +487,27 @@ html {
   @media screen and (max-width: 60em) {
     .project {
       margin-bottom: 10rem; } }
-  .project--img {
-    width: 40rem;
-    background-size: 100% 100%;
-    border-bottom: 1rem solid #b95700;
+  .project--img-link {
+    border-bottom: 0.5rem solid #fd7e0d;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    transition: all 0.2s ease-in-out; }
+    .project--img-link:focus {
+      outline: none;
+      border-bottom: 1rem solid #ffbb7e; }
     @media screen and (max-width: 60em) {
-      .project--img {
+      .project--img-link {
         width: 100%;
         grid-column: 1 / -1;
         grid-row: 1 / 2; } }
+  .project--img {
+    width: 40rem;
+    background-size: 100% 100%; }
+    @media screen and (max-width: 60em) {
+      .project--img {
+        width: 100%; } }
   .project--info {
     max-width: 120rem;
     grid-column: 2 / -1;

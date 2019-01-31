@@ -1,6 +1,7 @@
 .projects {
   height: 100%;
-  border-bottom: 1rem solid $color-orange-3;
+  padding-top: 6rem;
+  border-top: 1rem solid $color-orange-3;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
   grid-column-gap: 12rem;
@@ -36,19 +37,32 @@
     margin-bottom: 10rem;
   }
 
-  &--img {
-    width: 40rem;
-    background-size: 100% 100%;
-    border-bottom: 1rem solid $color-orange-2;
+  &--img-link {
+    border-bottom: 0.5rem solid $color-orange-3;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     justify-self: center;
     align-self: center;
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1rem solid $color-orange-5;
+    }
 
     @media screen and (max-width: $bp-xl) {
       width: 100%;
       grid-column: 1 / -1;
       grid-row: 1 / 2;
+    }
+  }
+
+  &--img {
+    width: 40rem;
+    background-size: 100% 100%;
+
+    @media screen and (max-width: $bp-xl) {
+      width: 100%;
     }
   }
 
