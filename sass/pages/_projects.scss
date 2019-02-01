@@ -20,6 +20,10 @@
     grid-column: 1 / -1;
   }
 
+  @media screen and (max-width: $bp-lg) {
+    overflow: auto;
+  }
+
   @media screen and (max-width: $bp-md) {
     grid-template-columns: 1fr;
   }

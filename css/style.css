@@ -536,6 +536,9 @@ html {
       background: #ff9e48; }
   .projects .heading-3 {
     grid-column: 1 / -1; }
+  @media screen and (max-width: 48em) {
+    .projects {
+      overflow: auto; } }
   @media screen and (max-width: 40em) {
     .projects {
       grid-template-columns: 1fr; } }
