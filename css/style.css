@@ -361,7 +361,6 @@ html {
         padding: 8rem; } }
     @media screen and (max-width: 48em) {
       .page--right {
-        padding-top: 12rem;
         position: relative;
         top: 100%;
         left: 0; } }
@@ -523,7 +522,6 @@ html {
 
 .projects {
   height: 100%;
-  padding-top: 6rem;
   border-top: 1rem solid #fd7e0d;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
@@ -544,6 +542,7 @@ html {
       grid-template-columns: 1fr; } }
 
 .project {
+  padding: 2rem 1rem;
   margin-bottom: 16rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -552,7 +551,7 @@ html {
   grid-row-gap: 2rem; }
   @media screen and (max-width: 60em) {
     .project {
-      margin-bottom: 10rem; } }
+      margin-bottom: 4rem; } }
   .project--img-link {
     border-bottom: 0.5rem solid #fd7e0d;
     grid-column: 1 / 2;
@@ -563,7 +562,7 @@ html {
     .project--img-link:focus {
       outline: none;
       border-bottom: 1rem solid #ffbb7e; }
-    @media screen and (max-width: 60em) {
+    @media screen and (max-width: 48em) {
       .project--img-link {
         width: 100%;
         grid-column: 1 / -1;
@@ -579,7 +578,7 @@ html {
     grid-column: 2 / -1;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-    @media screen and (max-width: 60em) {
+    @media screen and (max-width: 48em) {
       .project--info {
         grid-column: 1 / -1;
         grid-row: 2 / -1; } }
