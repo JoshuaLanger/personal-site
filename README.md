@@ -1,2 +1,2 @@
-# personal-site-prototype
-Creating a new site from scratch
+# personal-site
+Check it out at https://joshlanger.me
