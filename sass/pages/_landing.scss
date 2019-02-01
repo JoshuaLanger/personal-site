@@ -24,4 +24,12 @@
     border: 2px solid $color-white;
     outline: none;
   }
+
+  @media screen and (max-width: $bp-lg) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: $bp-md) {
+    width: 80%;
+  }
 }

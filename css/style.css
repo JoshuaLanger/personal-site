@@ -511,6 +511,12 @@ html {
     transform: translateY(-0.5rem);
     border: 2px solid #ffffff;
     outline: none; }
+  @media screen and (max-width: 48em) {
+    .icon-bar {
+      width: 70%; } }
+  @media screen and (max-width: 40em) {
+    .icon-bar {
+      width: 80%; } }
 
 .projects {
   height: 100%;

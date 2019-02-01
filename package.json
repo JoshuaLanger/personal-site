@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoshuaLanger/personal-site-prototype.git"
+    "url": "git+https://github.com/JoshuaLanger/personal-site.git"
   },
   "author": "Joshua Langer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JoshuaLanger/personal-site-prototype/issues"
+    "url": "https://github.com/JoshuaLanger/personal-site/issues"
   },
-  "homepage": "https://github.com/JoshuaLanger/personal-site-prototype#readme",
+  "homepage": "https://github.com/JoshuaLanger/personal-site#readme",
   "dependencies": {
     "autoprefixer": "^9.4.7",
     "node-sass": "^4.11.0",
