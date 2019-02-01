@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "Creating a new site from scratch",
   "main": "index.js",
+  "browserslist": [
+    ">1%",
+    "last 10 versions",
+    "IE 11"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "scripts": {
     "watch-sass": "node-sass sass/main.scss css/style.css -w",
     "compile-sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix-css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.comp.css -o css/style.prefix.css",
+    "prefix-css": "postcss css/style.comp.css -o css/style.prefix.css",
     "compress-css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "remove-extra": "rm css/style.prefix.css css/style.comp.css",
     "build-css": "npm-run-all compile-sass prefix-css compress-css remove-extra"
