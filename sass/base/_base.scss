@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
 
   @media screen and (max-width: $bp-lg) {
+    scroll-behavior: smooth;
     font-size: 50%;
   }
 }

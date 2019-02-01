@@ -55,6 +55,7 @@ html {
   box-sizing: border-box; }
   @media screen and (max-width: 48em) {
     html {
+      scroll-behavior: smooth;
       font-size: 50%; } }
 
 ::-webkit-scrollbar {
