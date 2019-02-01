@@ -466,6 +466,9 @@ html {
       grid-template-columns: 1fr; } }
   .contact-form--field {
     padding-bottom: 2rem; }
+    .contact-form--field input,
+    .contact-form--field textarea {
+      box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.35); }
   .contact-form #contact-form-message {
     grid-column: 1 / -1; }
   .contact-form--heading {
