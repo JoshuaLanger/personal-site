@@ -1,6 +1,6 @@
 {
   "name": "personal-site-prototype",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creating a new site from scratch",
   "main": "index.js",
   "browserslist": [
